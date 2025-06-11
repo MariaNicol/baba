@@ -1,0 +1,30 @@
+
+#include <iostream>
+#include <cstring>
+using namespace std;
+
+int main() 
+{
+   char a[21];
+  cin.getline(a, 21) ;
+  
+     int max=a[0],i ;  
+   for ( int i=0; i<strlen(a); i++)
+   {
+     if (a[i]>max) max=a[i];
+     
+   }
+   char y;
+   cin>>y;
+   i=0; 
+   while ((a[i]!=y)&&(i<strlen(a)))
+   {
+     i++; 
+   }
+   
+   if ( y==a[i]) cout <<"YES"; 
+   else cout<<"no!!";
+  cout<<" max= "<<max<<y;
+    return 0;
+}
+
